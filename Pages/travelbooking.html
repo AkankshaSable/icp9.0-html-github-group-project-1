@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+</head>
+<body>
+    <h2>Travel Booking</h2>
+
+  <form action="submit_booking.php" method="POST">
+    <label for="bookingType">Select Booking Type:</label>
+    <select id="bookingType" name="bookingType">
+      <option value="travels">Travels</option>
+      <option value="trains">Trains</option>
+      <option value="flights">Flights</option>
+    </select>
+    <br><br>
+
+    <label for="from">From:</label>
+    <input type="text" id="from" name="from" required>
+    <br><br>
+
+    <label for="to">To:</label>
+    <input type="text" id="to" name="to" required>
+    <br><br>
+
+    <label for="departureDate">Departure Date:</label>
+    <input type="date" id="departureDate" name="departureDate" required>
+    <br><br>
+
+    <label for="returnDate">Return Date:</label>
+    <input type="date" id="returnDate" name="returnDate">
+    <br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
