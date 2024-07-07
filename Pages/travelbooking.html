@@ -6,11 +6,11 @@
     <title>Travel Booking</title>
 </head>
 <body>
-  <img src="/Images/travel2.webp" height="300" width="600"> <br> <br>
+  <img src="./../Images/travel2.webp" height="400" width="800"> <br> 
 
- <h2>Travel Booking</h2>
+ <h1>Travel Booking</h1>
 <form action="submit_booking.php" method="POST">
-    <label for="bookingType">Select Booking Type:</label>
+    <label for="bookingType">Select Booking Type: </label>
     <select id="bookingType" name="bookingType">
       <option value="travels">Travels</option>
       <option value="trains">Trains</option>
@@ -19,22 +19,22 @@
     <br><br>
 
     <label for="from">From:</label>
-    <input type="text" id="from" name="from" required>
+    <input type="text" id="from" name="from" required style="width:25%; height: 30px;">
     <br><br>
 
     <label for="to">To:</label>
-    <input type="text" id="to" name="to" required>
+    <input type="text" id="to" name="to" required style="width:25%; height:30px ;">
     <br><br>
 
     <label for="departureDate">Departure Date:</label>
-    <input type="date" id="departureDate" name="departureDate" required>
+    <input type="date" id="departureDate" name="departureDate" required style="width: 20%; height: 30px;">
     <br><br>
 
     <label for="returnDate">Return Date:</label>
-    <input type="date" id="returnDate" name="returnDate">
+    <input type="date" id="returnDate" name="returnDate" style="width: 20%; height:30px;">
     <br><br>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" style="width: 10%; height:40px " >
   </form> <br>
   <a href="/index.html">Go back to the Home Page</a>
 
