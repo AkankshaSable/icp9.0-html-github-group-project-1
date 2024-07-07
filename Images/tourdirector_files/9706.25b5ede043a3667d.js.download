@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9706],{69706:function(e,u,t){t.r(u);var n=t(52903),o=t(2784),r=t(75449);u.default=e=>{let{content:u}=e,{setTourCode:t}=(0,o.useContext)(r.OH);return(0,o.useEffect)(()=>t((null==u?void 0:u.trackingTourCode)||""),[]),(0,n.tZ)(r.v9,{tourCode:null==u?void 0:u.trackingTourCode})}}}]);
