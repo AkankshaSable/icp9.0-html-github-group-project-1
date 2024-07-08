@@ -6,7 +6,7 @@
     <title>Travel Booking</title>
 </head>
 <body>
-  <img src="./../Images/travel2.webp" height="400" width="800"> <br> 
+  <img src="./../Images/travel2.webp" height="400" width="700"> <br> 
 
  <h1>Travel Booking</h1>
 <form action="submit_booking.php" method="POST">
@@ -17,6 +17,16 @@
       <option value="flights">Flights</option>
     </select>
     <br><br>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required style="width: 25%; height: 30px;" > <br><br>
+       
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required style="width: 25%; height: 30px;"> <br><br>
+
+    <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required style="width: 25%; height: 30px;"> <br><br>
 
     <label for="from">From:</label>
     <input type="text" id="from" name="from" required style="width:25%; height: 30px;">
