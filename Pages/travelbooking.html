@@ -6,38 +6,113 @@
     <title>Travel Booking</title>
 </head>
 <body>
+  <hr><b>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./../index.html">Home</a>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="./../Pages/destinations.html" target="_blank">Places</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./../Pages/special_offers.html" target="_blank">Offers</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <a href="./../index.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <b>Booking</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <a href="./../index.html">About Us</a>
+  </b>
+</hr><br><br>
+<img src="./../Images/travel2.webp" height="400" width="800"> <br> 
+
+
+  <div class="container">
+    <h2>Travel Booking Form</h2>
+    <p>(Please make sure information that you fill in the form will same in your passport/Ticket.)</p>
+    
+    <form action="submit_booking.php" method="POST">
+      <label for="bookingType">Select Booking Type: </label>
+      <select id="bookingType" name="bookingType">
+        <option value="travels">Travels</option>
+        <option value="trains">Trains</option>
+        <option value="flights">Flights</option> &nbsp; &nbsp; <br><br>
+      
+    <br><br><label for="fname">Passenger Name:</label>
+    <input type="text" id="fname" name="fname" placeholder="First name">
+    <input type="text" id="mname" name="mname" placeholder="Middle name">
+    <input type="text" id="lname" name="lname" placeholder="Last name"> <br><br>
   
-
-  <img src="./../Images/travel2.webp" height="400" width="800"> <br> 
-
- <h1>Travel Booking</h1>
-<form action="submit_booking.php" method="POST">
-    <label for="bookingType">Select Booking Type: </label>
-    <select id="bookingType" name="bookingType">
-      <option value="travels">Travels</option>
-      <option value="trains">Trains</option>
-      <option value="flights">Flights</option>
-    </select>
-    <br><br>
-
+    <label for="bday">Date Of Birth:</label>
+    <input type="date" id="bday" name="bday"> <br> <br>
+  
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">other</label><br><br>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your email">
+  
+    <label for="mobile">Mobile No:</label>
+    <input type="text" id="mobile" name="mobile" placeholder="Your mobile number"><br><br>
+  
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" placeholder="Your address">
+  
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" placeholder="Your city">
+  
+    <label for="region">Region:</label>
+    <input type="text" id="region" name="region" placeholder="Your region"><br><br>
+  
+    <label for="pincode">Pincode:</label>
+    <input type="text" id="pincode" name="pincode" placeholder="Your pincode">
+  
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" placeholder="Your country"> <br><br>
     <label for="from">From:</label>
-    <input type="text" id="from" name="from" required style="width:25%; height: 30px;">
-    <br><br>
+     <input type="text" id="from" name="Start from" required>
+  
+    <label for="destination">Destination:</label>
+    <input type="text" id="destination" name="destination" placeholder="Your destination"><br><br>
+  
+    <label for="ddate">Departure Date:</label>
+    <input type="date" id="ddate" name="ddate">
+  
+    <label for="rdate">Return Date:</label>
+    <input type="date" id="rdate" name="rdate"><br><br>
+  
+    <label for="time">Time Which You Want:</label>
+    <input type="time" id="time" name="time">
+  
+    <label>Airline Cabin Classes:</label>
+    <input type="checkbox" id="economy" name="cabin" value="economy">
 
-    <label for="to">To:</label>
-    <input type="text" id="to" name="to" required style="width:25%; height:30px ;">
-    <br><br>
+    <label for="economy">Economy</label>
+    <input type="checkbox" id="premium" name="cabin" value="premium">
 
-    <label for="departureDate">Departure Date:</label>
-    <input type="date" id="departureDate" name="departureDate" required style="width: 20%; height: 30px;">
-    <br><br>
+    <label for="premium">Premium Economy</label>
+    <input type="checkbox" id="business" name="cabin" value="business">
 
-    <label for="returnDate">Return Date:</label>
-    <input type="date" id="returnDate" name="returnDate" style="width: 20%; height:30px;">
-    <br><br>
-
-    <input type="submit" value="Submit" style="width: 10%; height:40px " >
-  </form> <br>
+    <label for="business">Business</label>
+    <input type="checkbox" id="first" name="cabin" value="first">
+    <label for="first">First Class</label> <br><br>
+  
+    <label>Type Of Seat:</label>
+    <input type="radio" id="exit" name="seat" value="exit">
+    <label for="exit">Exit Row</label>
+    <input type="radio" id="window" name="seat" value="window">
+    <label for="window">Window Seat</label>
+    <input type="radio" id="any" name="seat" value="any">
+    <label for="any">Anywhere</label>
+  
+    <input type="checkbox" id="agree" name="agree" value="agree">
+    <label for="agree">I agree with all terms and condition of agency.</label>
+    <p>(If any problem while reserve seat we will inform on your email/phone)</p>
+  
+    <button type="submit" class="button">Book Your Seat</button>
+  </div><br>
   <a href="/index.html">Go back to the Home Page</a>
 
 </body>
